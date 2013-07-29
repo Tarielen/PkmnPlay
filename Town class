@@ -5,118 +5,11 @@ public class Town {
 
     public static Random rand = new Random();
     public static Scanner scan = new Scanner(System.in);
-    private static int num, amount, stash, x = 0, choice = 0;
+    private static int stash = 0, x = 0, choice = 0;
     public static Pokemon Enemy = new Pokemon();
     public static Pokemon currentPokemon = new Pokemon();//Trainer.pokemonRoster()
     static String[] s = {"Pallet Town", "Pewter City", "Cerulean City"};
     static int[] Encounter = new int[]{};
-
-    public static void wildEncounter(Pokemon Enemy) {
-        System.out.println("You have encountered a wild " + Enemy.name + "!");
-        System.out.println("The wild "+ Enemy.name + " has " + Enemy.hp + " life.");
-        System.out.println(Trainer.getName()+": "+currentPokemon.name+", I choose you!");
-        System.out.println(currentPokemon.name+ " has " + currentPokemon.hp+" health remaining.");
-        
-        while (Enemy.hp != 0) {
-            System.out.println(
-                    "What would you like to do?\n"
-                    + "1: Attack\n"
-                    + "2: Items\n"
-                    + "3: Switch Pkmn\n"
-                    + "4:Run Away\n"
-                    + "Your Selection: ");
-            choice = scan.nextInt();
-            switch (choice) {
-                case 1:
-                    Attack(Enemy, currentPokemon);
-                    break;
-                case 2:
-                    Backpack.checkBackpack();
-                    break;
-                case 3:
-                    //Trainer.pokemonRoster();
-                    break;
-                case 4:
-                    int chance = rand.nextInt(100);
-                    if (chance < 80) {
-                        Town.Town();
-                    } else {
-                        break;
-                    }
-            }
-        }
-        System.out.println("You have defeated the wild "+Enemy.name);
-    }
-
-    public static void whichEncounter(int x) {
-        switch (x) {
-            case 0:
-                EncounterPallet();
-                break;
-            case 1:
-                EncounterPewter();
-                break;
-            case 2:
-                EncounterCerulean();
-                break;
-        }
-    }
-
-    public static void EncounterPallet() {
-        amount = rand.nextInt(3);
-        for (int i = 0; i < amount; i++) {
-            num = rand.nextInt(2);
-            switch (num) {
-                case 1:
-                    Enemy = new Ratata();
-                    wildEncounter(Enemy);
-                    break;
-                default:
-                    Enemy = new Pidgy();
-                    wildEncounter(Enemy);
-                    break;
-            }
-        }
-    }
-
-    public static void EncounterPewter() {
-        amount = rand.nextInt(3);
-        for (int i = 0; i < amount; i++) {
-            num = rand.nextInt(2);
-            switch (num) {
-                case 1:
-                    Enemy = new Ratata();
-                    wildEncounter(Enemy);
-                    break;
-                default:
-                    Enemy = new Pidgy();
-                    wildEncounter(Enemy);
-                    break;
-            }
-        }
-    }
-
-    public static void EncounterCerulean() {
-        amount = rand.nextInt(3);
-        for (int i = 0; i < amount; i++) {
-            num = rand.nextInt(2);
-            switch (num) {
-                case 1:
-                    Enemy = new Ratata();
-                    wildEncounter(Enemy);
-                    break;
-                default:
-                    Enemy = new Pidgy();
-                    wildEncounter(Enemy);
-                    break;
-            }
-        }
-    }
-
-    public static void Attack(Object Enemy, Object currentPokemon) {
-        
-        
-    }
 
     public static void Town() {
         if (x == 0) {
@@ -176,13 +69,13 @@ public class Town {
 
     public static void nextTown() {
         x++;
-        whichEncounter(x);
+        Battle.whichEncounter(x);
         Town();
     }
 
     public static void lastTown() {
         x--;
-        whichEncounter(x);
+        Battle.whichEncounter(x);
         Town();
     }
 
@@ -231,12 +124,13 @@ public class Town {
     }
 
     public static void professorAlger() {
-        System.out.println("Well, hello " + Trainer.getName() + ".\nHow is the pokemon I gave you?\nThat's nice now GTFO.");
+        System.out.println("\nWell, hello " + Trainer.getName() + ".\nHow is the pokemon I gave you?\nThat's nice now GTFO.");
         Town.Town();
     }
 
     public static void mommy() {
         int temp = 0;
+        int myMoney = Trainer.getMoney();
         System.out.println("Mom: "+ Trainer.getName() + ", Get me a beer!");
         System.out.println(Trainer.getName() + ": No, mom I have begun my conquest to be the best Pokemon"
                 + " Slaver in the World!");
@@ -244,11 +138,10 @@ public class Town {
         System.out.println(Trainer.getName() + ": but he is passed out!");
         System.out.println("Mom:...");
         System.out.println(Trainer.getName() + ":(f*** it im just gonna hide it under my pillow)");
-        System.out.println("You currently have "+Trainer.getMoney()+" PokeYen under your pillow!!");
+        System.out.println("You currently have "+myMoney+" PokeYen in your pocket and "+stash+" PokeYen under your pillow!!");
         System.out.println("1. Deposit Money  2. Withdraw Money");
         Scanner which = new Scanner(System.in);
         temp = which.nextInt();
-        stash = Trainer.getMoney();
         switch (temp) {
             case 1:
                 System.out.print("How much will you Deposit?    :");
@@ -258,7 +151,8 @@ public class Town {
                     System.out.print("I do not accept blood donations to myself.");
                 else 
                     stash += temp;
-                Trainer.setMoney(stash);
+                myMoney = myMoney - temp;
+                Trainer.setMoney(myMoney);
                 System.out.println("You now have " + stash + " saved up!");
                 break;
 
@@ -270,7 +164,8 @@ public class Town {
                     System.out.println("You wish...");
                 else
                     stash-=temp;
-                Trainer.setMoney(stash);
+                myMoney = myMoney + temp;
+                Trainer.setMoney(myMoney);
                 System.out.println("You now have " + stash + " left");
                 break;
             default:
