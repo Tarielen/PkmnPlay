@@ -1,0 +1,38 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package PokemonList;
+
+import PokeGame.Pokemon;
+
+public class Charmander extends Pokemon {
+
+    public   void Charmander() 
+    {
+
+    }
+
+    public   void CharmanderAbilities() {
+        //Abilities.Ember();
+    }
+
+    public void CharmanderSetStats() {
+        Charmander.setPokeName("Charmander");
+        Charmander.setID(7);
+        Charmander.setHP(20);
+        Charmander.setATK(5);
+        Charmander.setDEF(3);
+        Charmander.setSPD(4);
+        Charmander.setSPL(5);
+        Charmander.setACC(4);
+        Charmander.setSPCDEF(3);
+        Charmander.setType(1);
+    }
+    public static void CharmanderGetStats()
+    {
+//static errors
+                
+                
+    }
+}
