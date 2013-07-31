@@ -1,0 +1,95 @@
+public class Abilities {
+    
+    static int Struggle(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        return dmg;
+    }
+    static int Ember(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Fire"))
+            dmg += currentPokemon.spl;
+        return dmg;
+    }
+    
+    static int Tackle(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+    }
+    
+    static int Scratch(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+    }
+    
+    static int Bubble(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Water"))
+            dmg += currentPokemon.spl;
+        return dmg;
+    }
+    
+    static int VineWhip(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Grass"))
+            dmg += currentPokemon.spl;
+        return dmg;
+    }
+    
+    static int Bite(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Dark"))
+            dmg += currentPokemon.spl;
+        return dmg;
+    }
+    
+    static int Growl(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+    }
+    
+    static int Screech(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+    }
+    
+    static int TailWhip(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+    }
+    
+    static int Absorb(Pokemon currentPokemon){ //recovers half dmg dealt
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Grass"))
+            dmg += currentPokemon.spl;
+        return dmg;
+    }
+    
+    static int Acid(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Poison"))
+            dmg += currentPokemon.spl;
+        return dmg;
+    }
+}
