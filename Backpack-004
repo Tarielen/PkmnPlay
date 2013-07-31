@@ -1,0 +1,84 @@
+package PokeGame;
+
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author tyler.nations
+ */
+// (backpack,item,quanity)
+
+
+public class Backpack  //extends Trainer
+{
+
+    int[][]  items =new int[][]
+   {
+       {0,1,2,3,4,5,6,7,8,9,10,11,12}, // itemID
+       {5,2,0,0,5,1,0,0,0,0,2,2,0,0}, //QuanityCheck
+       
+   };
+      
+   
+   static String[] itemNames = {"Pokeball","Greatball","Superball","Masterball"
+           ,"Potion","Super Potion","Hyper Potions","Max Potion",
+           "Antidote","Awakening","Full Heal","Full Restore"};
+   
+    
+    
+    
+    public  void addItemQuanity(int itemID,int quanityAdded)
+    {
+          items[1][itemID] += quanityAdded;
+     
+    }
+    
+    public  void loseItemQuanity(int itemID,int quanityLost)
+    {
+        items[1][itemID]  += quanityLost;
+    }
+    
+    
+    public  void backpackCheck() // Shows items if you have 1 or more of item
+    {
+        for (int counter2 = 0; counter2 < 12; counter2++)
+        {
+            if (items[1][counter2] != 0)
+            {
+            System.out.println(itemNames[counter2] + " game id is " +(items[0][counter2])
+               + " and quanity is " + items[1][counter2] );    
+            }
+        }
+    }
+    
+    
+    public  void fullBackPackCheck() // Shows full list of items even if 0 quanity
+    {
+  
+            for (int counter2 = 0; counter2 < 12; counter2++)
+            {
+            System.out.println(itemNames[counter2] + " game id is " +(items[0][counter2])
+               + " and quanity is " + items[1][counter2] );    
+            
+            }
+    }
+    
+
+}
+
+
+
+/*
+   public static void test1()
+   {
+       System.out.println(items[0][0]); // Prints Game ID
+       System.out.println(items[1][0]); // Prints Quanity
+       
+       //Example
+       System.out.println(itemNames[0] + " game id is " +(items[0][0])
+               + " and quanity is " + items[1][0] );
+       
+   }*/
