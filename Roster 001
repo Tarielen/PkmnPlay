@@ -1,0 +1,123 @@
+package PokeGame;
+
+
+import PokemonList.Charmander;
+import java.util.Scanner;
+
+
+
+public class PokemonRoster  extends Trainer
+
+
+{
+    int choice = 0;
+    int choice2 = 0;
+    int choice3 = 0;
+    Scanner input = new Scanner(System.in);
+    public void pokemonRoster()
+    {
+        
+        
+        Charmander Starter = new Charmander();
+        Pokemon two = new Pokemon();
+        Pokemon three = new Pokemon();// These are blanks for now they share stats of charmander
+        Pokemon four = new Pokemon(); //
+        Pokemon five = new Pokemon(); //
+        Pokemon six = new Pokemon();  //
+        Pokemon holder = new Pokemon(); // Blank object to be replaced when switching pokemon out 
+        
+        
+        Starter.CharmanderSetStats();
+               
+        myList.add(Starter);
+        myList.add(two);
+        myList.add(three);
+        myList.add(four);        
+        myList.add(five);
+        myList.add(six);  
+        myList.add(holder);
+        
+        statGetter(0);
+        System.out.printf("What would you like to do?\n"
+                + "1 for Change Pokemon order\n" // put swapper into a method
+                + "2 for Check Pokemon stats\n"); // call getStats
+                
+               
+        choice = input.nextInt();
+
+        
+        if (choice == 1)   // Does not fully work yet << need way to sort get object name , try do while
+        {
+            System.out.println("Which pokemon would you like to move?");
+            for(int counter = 1;counter <= 6;counter++)
+            {
+                System.out.println(counter+": "+ myList.get(counter).getPokeName());
+                
+      
+            }
+            choice2 = input.nextInt();
+            myList.set(6,myList.get(choice2));
+            System.out.println(myList.get(6).getPokeName()+"Which Pokemon do you want to swap with?");
+            for(int counter = 1;counter <= 6;counter++)
+            {
+                System.out.println(counter+": "+ myList.get(counter).getPokeName());
+                
+      
+            }            
+            choice3 = input.nextInt();
+            myList.set(choice2, myList.get(choice2));
+            myList.set(choice3, myList.get(6));
+            
+            System.out.println(myList.get(6).getPokeName()+" is in holder");
+            System.out.println(myList.get(choice2).getPokeName()+ " has been swapped?");
+            
+            
+              
+            
+        }
+        if (choice == 2)
+        {
+            System.out.println("Which pokemons stats do you want to see?");
+            for(int counter = 1;counter <= 6;counter++)
+            {
+                System.out.println(counter+": "+ myList.get(counter).getPokeName());
+                
+      
+            }
+            choice2 = input.nextInt();
+            statGetter(choice2);
+        }
+    }
+    
+        public void statGetter(int x)
+        {
+        System.out.println("Name:   "   + myList.get(x).getPokeName());
+        System.out.println("HP:     "   + myList.get(x).getHP());
+        System.out.println("Atk:    "   + myList.get(x).getATK());
+        System.out.println("Def:    "   + myList.get(x).getDEF());
+        System.out.println("Spd:    "   + myList.get(x).getSPD());
+        System.out.println("Spl:    "   + myList.get(x).getSPL());
+        System.out.println("Acc:    "   + myList.get(x).getACC());
+        System.out.println("Spcdef: "   + myList.get(x).getSPCDEF());
+        System.out.println("Type:   "   + myList.get(x).getType());
+        }
+        
+    
+    }
+        
+        
+       // System.out.println("pokemon one is at " +myList.indexOf(one) + " in the arraylist");
+       // myList.set(6, two);
+       // myList.set(1, one);
+       // myList.set(0, two);
+       // System.out.println("pokemon one is at " +myList.indexOf(one) + " in the arraylist");
+        
+
+       //System.out.println(one.getHP());
+       //one.setHP(-10);
+       //System.out.println(one.getHP());
+        
+
+    
+   
+
