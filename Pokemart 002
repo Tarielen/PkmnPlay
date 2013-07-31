@@ -1,0 +1,76 @@
+package PokeGame;
+
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+import java.util.*;
+/**
+ *
+ * @author tyler.nations
+ */
+public class PokeMart 
+{
+Scanner input=new Scanner(System.in);    
+OldBackPack back = new OldBackPack();
+   
+String[] itemList = {"Pokeball","Potion","Antidote"}; // itemList
+
+    public void pokeMart()
+    {
+        System.out.println("Welcome to the Pokemart!");
+        System.out.println("1. Buy");
+        System.out.println("2. Sell");
+        System.out.println("3. Leave");
+        System.out.print("Your Selection:");
+
+        int choice=input.nextInt();
+        switch(choice)
+        {
+            //case1: Buy()
+            //         break;
+            //case2: Sell()
+            //        break;
+            //case 3: Town();
+        }
+
+    }
+    public void Buy()
+    {
+        System.out.println("What would you like to buy?");
+        System.out.printf("1) Pokeball \n"
+                        + "2) Potion   \n"
+                        + "3) Antidote \n");
+        int choice=input.nextInt();  
+        int temp;
+        switch(choice)
+        {
+            case 1:
+                temp = back.getPokeballs();
+                System.out.println(temp);
+                System.out.println("You now have " + temp + " pokeballs");
+                break;
+                
+            case 2:
+                
+                System.out.println(back.getPotions());
+                System.out.println("You now have "+  " potions");
+                break;
+                
+            case 3:
+                
+                System.out.println(back.getAntidotes());
+                System.out.println("You now have "+   " antidotes");
+                break;
+                
+            default: 
+                break;
+                
+                
+            
+        }
+                
+    }
+    
+
+}
