@@ -1,0 +1,1174 @@
+/**
+ *
+ * @author eric.strohbusch
+ */
+public class Abilities {
+    
+    static int Struggle(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        return dmg;
+    }
+    static int Ember(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Fire"))
+            dmg += currentPokemon.spl;
+        return dmg;
+    }
+    
+    static int Tackle(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+    }
+    
+    static int Scratch(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+    }
+    
+    static int Bubble(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Water"))
+            dmg += currentPokemon.spl;
+        return dmg;
+    }
+    
+    static int VineWhip(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Grass"))
+            dmg += currentPokemon.spl;
+        return dmg;
+    }
+    
+    static int Bite(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Dark"))
+            dmg += currentPokemon.spl;
+        return dmg;
+    }
+    
+    static int Growl(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+    }
+    
+    static int Screech(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+    }
+    
+    static int TailWhip(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+    }
+    
+    static int Absorb(Pokemon currentPokemon){ //recovers half dmg dealt
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Grass"))
+            dmg += currentPokemon.spl;
+        return dmg;
+    }
+    
+    static int Acid(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Poison"))
+            dmg += currentPokemon.spl;
+        return dmg;
+    }
+static int MirrorShot(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Steel"))
+            dmg += currentPokemon.spl;
+        return dmg;
+    }
+static int MistBall(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Psychic"))
+            dmg += currentPokemon.spl;
+        return dmg;
+static int Mudbomb(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Ground"))
+            dmg += currentPokemon.spl;
+        return dmg;
+static int MudShot(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Psychic"))
+            dmg += currentPokemon.spl;
+        return dmg;
+    }
+static int MudSlap(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Ground"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int MuddyWater(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Psychic"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int MistBall(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Psychic"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int MistBall(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Psychic"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int NeedleArm(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Grass"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int NightDaze(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Dark"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Nightslash(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Dark"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Octazooka(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Water"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int OminousMind(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Ghost"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Outrage(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Dragon"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int OverHeat(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Fire"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Payday(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Payback(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Dark"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Peck(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Flying"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int PetalDance(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Grass"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int PinMissile(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Bug"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Pluck(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Flying"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int PoisonFang(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Poison"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int MistBall(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Psychic"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int PoisonJab(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Poison"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int PoisonSting(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Poison"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int PoisonTail(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Poison"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Pound(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int PowderSnow(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Ice"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int PowerGem(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Rock"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int PowerWhip(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Grass"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int PsyBeam(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Psychic"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Psychic(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Psychic"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int PsychoBoost(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Psychic"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int PsychoCut(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Psychic"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int PsyShock(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Psychic"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int PsyStrike(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Psychic"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Pursuit(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Dark"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int QuickAttack(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Rage(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int RapidSpin(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int RazorLeaf(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Grass"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int RazorShell(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Water"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int RazorWind(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int RelicSong(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Retaliate(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Revenge(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Fighting"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int RoarOfTime(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Dragon"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int RockBlast(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Rock"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int RockClimb(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int RockSlide(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Rock"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int RockSmash(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Fighting"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int MistBall(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Psychic"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int RockThrow(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Rock"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int RockTomb(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Rock"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int RockWrecker(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Rock"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int RollingKick(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Fighting"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Rollout(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Rock"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Round(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int SacredFire(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Fire"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int SacredSword(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Fighting"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int SandTomb(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Ground"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int SacredSword(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Fighting"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Scald(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Water"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int SacredSword(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Fighting"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Scratch(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int SearingShot(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Fire"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int SecretPower(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int SecretSword(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Fighting"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int SeedBomb(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Grass"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int SeedFlare(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Grass"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int SelfDestruct(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int ShadowBall(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Ghost"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int ShadowClaw(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Ghost"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int ShadowForce(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Ghost"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}static int ShadowPunch(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Ghost"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int ShadowSneak(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Ghost"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Shockwave(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Electric"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int SignalBeam(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Bug"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int SilverWind(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Bug"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int SkullBash(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int SkyAttack(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Flying"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int SkyDrop(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Flying"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int SkyUppercut(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Bullshit"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Slam(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Slash(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Sludge(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Poison"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int SludgeBomb(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Poison"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int SludgeWave(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Poison"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int SmackDown(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Rock"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int SmellingSalts(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Smog(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Poison"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Snarl(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Dark"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Snore(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int SolarBeam(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Grass"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int SacredSword(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Fighting"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Sonicboom(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Fighting"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int SpacialRend(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Dragon"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Spark(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Electric"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int SpikeCannon(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Bug"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int SteamRoller(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Bug"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int SteelWing(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Steel"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Stomp(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int StoneEdge(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("rock"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int StoredPower(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Psychic"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int StormThrow(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Fighting"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Strength(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Struggle(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int StruggleBug(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Bug"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Submission(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Fighting"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int SuckerPunch(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Dark"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+    static int SuperPower(Pokemon currentPokemon) {
+        int dmg = 0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Fighting")) {
+            dmg += currentPokemon.spl;
+        }
+        return dmg;
+    }
+static int Surf(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Water"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Swift(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Synchronoise(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Psychic"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Tackle(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int TailSlap(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Takedown(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int TechnoBlast(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Thief(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Dark"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Thrash(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Thunder(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Electric"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int ThunderFang(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Electric"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int ThunderPunch(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Electric"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int ThunderShock(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int ThunderBolt(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int TriAttack(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int TripleKick(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Fighting"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Twineedle(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Bug"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Twister(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Dragon"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int UTurn(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Bug"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Uproar(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int VCreate(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Fire"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int VacuumWave(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Fighting"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int VenoShock(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Poison"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int ViceGrip(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int VineWhip(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Grass"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int VitalThrow(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Fighting"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int VoltSwitch(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Electric"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int VoltTackle(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Electric"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int WakeUpSlap(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Fighting"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int WaterGun(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Water"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int WaterPledge(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Water"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int WaterPulse(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Water"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int WaterSpout(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Water"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int WaterFall(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Water"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int WeatherBall(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))//CHANGES WITH WEATHER
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int WhirlPool(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Water"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int WildCharge(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int WingAttack(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Flying"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int WoodHammer(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Grass"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int Wrap(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Normal"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int XScissor(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Bug"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int ZapCannon(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Electric"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
+static int ZenHeadbutt(Pokemon currentPokemon){
+        int dmg =0;
+        dmg += currentPokemon.atk;
+        if (currentPokemon.typeName.equals("Psychic"))
+            dmg += currentPokemon.spl;
+        return dmg;
+}
