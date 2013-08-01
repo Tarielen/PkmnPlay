@@ -1,0 +1,77 @@
+package PokeGame;
+
+import java.util.*;
+
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author tyler.nations
+ */
+public class Trainer 
+
+{
+private int badges,money; 
+String trainerName;
+Scanner input = new Scanner(System.in);
+ List <Pokemon> myList = new ArrayList();
+
+    public  void Trainer()
+    {
+
+                
+    }
+    
+    
+    public  void trainerStats()  // displays name, money, badges, and offers to check pokemon
+    {
+        // Add get money // get badges from ??
+        System.out.println(trainerName + " stats");
+        System.out.println("Money = "+ money);
+        System.out.println("Badges earned = "+ badges);
+        System.out.println("Would you like to check your pokemon status?");
+        // Add user input for y / n
+        
+    }
+
+                
+        
+    
+      
+
+
+    
+    
+    public  void setName()
+    {
+        System.out.println("Please input your name trainer");
+        trainerName = input.next();
+    }
+    public  String getName()
+    {
+        return trainerName;
+    }
+    public int getMoney()
+    {
+        return money;
+    }
+    
+    public void setMoney(int s)
+    {
+        money += s ;
+    }
+    public int getBadges()
+    {
+        return badges;
+    }
+    
+    public void setBadges(int s)
+    {
+        badges = s;
+    }    
+
+    
+}
